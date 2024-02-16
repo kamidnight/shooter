@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 19f4940beba45ce4680a48974bd0aeb2
+guid: 104f31b7a2455264b8bb14fe5377f880
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch03_1001_Diffuse
-    second: {fileID: 2800000, guid: 8eb55c8e41d6d67418dd382e95e735b2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch03_1001_Glossiness
-    second: {fileID: 2800000, guid: 361e393d85e315241b41adf2b860e587, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch03_1001_Normal
-    second: {fileID: 2800000, guid: 2eeb15fc5d53b7b4baabc23607459a05, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch03_1001_Specular
-    second: {fileID: 2800000, guid: 13184ac204c448943b2f43b42a76e4fc, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -91,10 +71,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 9f78b9f22020c1b42828569a1d1e81ce
-  - 6aebe73fa55a5654391b65a4cdbb8240
-  - 104f31b7a2455264b8bb14fe5377f880
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
