@@ -134,10 +134,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 868540853071475548, guid: 154d7290d7d49b74b8b1316921448d3b,
+        type: 3}
+      propertyPath: fireballPrefab
+      value: 
+      objectReference: {fileID: 6188141461039671487, guid: 4673bea4042d7e349b61b33d6616fcfd,
+        type: 3}
     - target: {fileID: 4462082959800453079, guid: 154d7290d7d49b74b8b1316921448d3b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4462082959800453079, guid: 154d7290d7d49b74b8b1316921448d3b,
         type: 3}
@@ -752,6 +758,7 @@ Transform:
   - {fileID: 153956474}
   - {fileID: 2124823658}
   - {fileID: 1903180705}
+  - {fileID: 1599493607}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1428,15 +1435,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599493606}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.0195758, y: 3.5858397, z: 4.535039}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 349115815}
   - {fileID: 1990032605}
   - {fileID: 443027283}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 880964578}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648215333
 GameObject:
@@ -1542,6 +1549,8 @@ GameObject:
   - component: {fileID: 1777306430}
   - component: {fileID: 1777306432}
   - component: {fileID: 1777306431}
+  - component: {fileID: 1777306434}
+  - component: {fileID: 1777306433}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1581,6 +1590,7 @@ MonoBehaviour:
   - {fileID: 1990032605}
   - {fileID: 443027283}
   player: {fileID: 804737196}
+  viewAngle: 90
 --- !u!195 &1777306432
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1603,6 +1613,33 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1777306433
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777306429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.27
+  m_Height: 2.07
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.97, z: 0}
+--- !u!114 &1777306434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777306429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f472f4acf1e2b7469639f21687c1445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 100
 --- !u!1 &1886113311
 GameObject:
   m_ObjectHideFlags: 0
