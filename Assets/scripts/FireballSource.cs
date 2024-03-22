@@ -10,13 +10,14 @@ public class FireballSource : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        var ray = cameraLink.ViewportPointToRay(new Vector3(0.5f, 0.65f, 0));
+        var ray = cameraLink.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 
         RaycastHit hit;
         if(Physics.Raycast(ray, out hit))
