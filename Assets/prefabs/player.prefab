@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2580949605474928765}
   - component: {fileID: 5588729407173532035}
   m_Layer: 0
-  m_Name: Fireball Source
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -417,13 +417,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20881794, g: 0, b: 0.2735849, a: 0.25490198}
+  m_Color: {r: 0.4056604, g: 0.09758811, b: 0.18431923, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e78d4c42e126a804e9721c8b5e53328c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -467,7 +467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 67.61}
   m_SizeDelta: {x: 500, y: 71.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &897582970702432948
@@ -640,6 +640,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &2924004665160982107
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543744798232170041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 703da8bb32b411a4dba5ebb682f3e66b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4010435083009367234
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002422, y: -171}
+  m_AnchoredPosition: {x: -0.00002422, y: -145.69}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3685503099271867552
@@ -787,7 +806,6 @@ GameObject:
   - component: {fileID: 4462082959800453078}
   - component: {fileID: 868540853071475548}
   - component: {fileID: 8957212675446730154}
-  - component: {fileID: 2922474951520144247}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -829,7 +847,7 @@ CharacterController:
   m_Radius: 0.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.81, z: 0}
 --- !u!114 &4462082959800453081
@@ -863,6 +881,7 @@ MonoBehaviour:
   Gravity: 9.8
   JumpForce: 7
   Speed: 5
+  animator: {fileID: 2924004665160982107}
 --- !u!114 &868540853071475548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,25 +910,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxValue: 100
   Healthbar: {fileID: 4357992054101220953}
-  PlayerUI: {fileID: 4462082959800453082}
+  animator: {fileID: 2924004665160982107}
+  PlayerUI: {fileID: 7040535550900829252}
   GameOverUI: {fileID: 234949971742608475}
---- !u!114 &2922474951520144247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462082959800453082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e422413459fdfb42ba887a2acf5e2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HexEffectPrefab: {fileID: 6163066024595888598, guid: b31db55398c9c26479c5e3a298e2a8da,
-    type: 3}
-  Duck: {fileID: 4885947492526139047, guid: f48dd12c30ff3704aade334527f2a144, type: 3}
-  SpellIcon: {fileID: 3202319974724560638}
-  Cooldown: 10
 --- !u!1 &4462082960084274504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1472,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f4940beba45ce4680a48974bd0aeb2, type: 3}
+--- !u!1 &3543744798232170041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 19f4940beba45ce4680a48974bd0aeb2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4462082960405394280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4208114341913040003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19f4940beba45ce4680a48974bd0aeb2,

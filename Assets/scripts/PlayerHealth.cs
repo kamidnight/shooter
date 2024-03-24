@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public float MaxValue = 100;
     public Slider Healthbar;
+    public Animator animator;
 
     //Не забудь указать ссылки на эти UI элементы в сцене
     public GameObject PlayerUI;
@@ -25,8 +26,7 @@ public class PlayerHealth : MonoBehaviour
         _currentValue -= damage;
         if (_currentValue <= 0)
         {
-            //_currentValue = 0;
-            //Если здоровья не осталось, вызвать метод конца игры
+            _currentValue = 0;
             GameOver();
         }
         UpdateHealthbar();
@@ -54,5 +54,6 @@ public class PlayerHealth : MonoBehaviour
         GameOverUI.SetActive(true);
         GetComponent<PlayerController>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
+        animator.SetTrigger("death");
     }
 }
