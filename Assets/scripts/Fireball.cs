@@ -13,6 +13,7 @@ public class Fireball : MonoBehaviour
         DamageEnemy(collision);
         DestroyFireball();
     }
+
     private void DamageEnemy(Collision collision)
     {
         var enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();

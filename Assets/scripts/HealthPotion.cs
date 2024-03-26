@@ -6,6 +6,8 @@ public class HealthPotion : MonoBehaviour
 {
     public int healthAmount = 30;
 
+
+
     void OnTriggerEnter(Collider other)
     {
         //пробуем взять у объекта с которым мы столкнулись компонент системы здоровья

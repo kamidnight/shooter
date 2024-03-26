@@ -8,12 +8,17 @@ public class PlayerHealth : MonoBehaviour
     public float MaxValue = 100;
     public Slider Healthbar;
     public Animator animator;
-
+    public AudioSource AidKitSound;
     //Не забудь указать ссылки на эти UI элементы в сцене
     public GameObject PlayerUI;
     public GameObject GameOverUI;
 
     float _currentValue;
+
+    void awake()
+    {
+        AidKitSound = GetComponent<AudioSource>();
+    }
 
     void Start()
     {
@@ -40,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
         }
         //HealEffect.GetComponent<ParticleSystem>().Play();
         UpdateHealthbar();
+        AidKitSound.Play();
     }
 
     void UpdateHealthbar()
