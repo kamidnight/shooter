@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3177ef44616c9ba43b58c3b0a65bf83f
+guid: b603e954916df184083bc16189ee9b21
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
+    second: Sneak Walk (1)
+  - first:
+      74: 3325555113448999400
     second: Sneak Walk
   externalObjects: {}
   materials:
@@ -39,7 +42,7 @@ ModelImporter:
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 27
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

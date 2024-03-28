@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &3543585756715561786
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531286573940284248}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0a4bd577e19ff94b9a0ab8496f4ef84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3450186587281174311
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,8 +47,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3450186587281174311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 3.0329, z: 4.22}
-  m_LocalScale: {x: 0.87963235, y: 0.87963235, z: 0.87963235}
+  m_LocalPosition: {x: -2.9, y: 2.5032, z: 4.2209}
+  m_LocalScale: {x: 1.4294732, y: 1.4294732, z: 1.4294732}
   m_Children:
   - {fileID: 2912490951284703714}
   m_Father: {fileID: 0}
@@ -75,7 +94,7 @@ MonoBehaviour:
   - {fileID: 0}
   player: {fileID: 0}
   viewAngle: 90
-  damage: 30
+  damage: 20
 --- !u!114 &3450186587281174360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f472f4acf1e2b7469639f21687c1445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 100
+  value: 70
+  animator: {fileID: 3543585756715561786}
 --- !u!136 &3450186587281174363
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -99,10 +119,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
-  m_Height: 2.07
+  m_Radius: 0.23
+  m_Height: 1.27
   m_Direction: 1
-  m_Center: {x: 0, y: 0.97, z: 0}
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1001 &3450186586554115593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,6 +192,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b55dca41dcc9bf4ea8129fa364b0aa5, type: 3}
+--- !u!1 &2531286573940284248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b55dca41dcc9bf4ea8129fa364b0aa5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3450186586554115593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2912490951284703714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7b55dca41dcc9bf4ea8129fa364b0aa5,
